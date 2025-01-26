@@ -24,14 +24,13 @@ const Header = ()=>{
 
                             <div className='col-sm-10 d-flex align-items-center part2'>
                                 <CountryDropdown/>
-
+                        
                                 {/* Header search starts here */}
-                                    <div className='headerSerch ml-3 mr-3'>
-                                        <input type='text'/>
-                                        <Button><IoSearch/></Button>
-                                    </div>
+                                <div className='headerSearch ml-3 mr-3'>
+                                    <input type='text' placeholder='Search for products...'/>
+                                    <Button><IoSearch/></Button>
+                                </div>
                                 {/* Header search ends here */}
-
                             </div>
                         </div>
                     </div>
