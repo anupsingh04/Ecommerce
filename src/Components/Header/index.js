@@ -3,6 +3,10 @@ import Logo from '../../assets/images/logo.webp';
 import CountryDropdown from '../CountryDropdown';
 import { IoSearch } from 'react-icons/io5';
 import Button from '@mui/material/Button';
+import { LuUserRound } from "react-icons/lu";
+import { FiShoppingCart } from "react-icons/fi";
+
+
 
 
 const Header = ()=>{
@@ -31,6 +35,18 @@ const Header = ()=>{
                                     <Button><IoSearch/></Button>
                                 </div>
                                 {/* Header search ends here */}
+
+                                <div className='part3 d-flex align-items-center ml-auto'>
+                                    <Button className='circle mr-3'><LuUserRound /></Button>
+                                    <div className='ml-auto cartTab d-flex align-items-center'>
+                                        <span className='price'>$2.99</span>
+                                        <div className='position-relative'>
+                                            <Button className='circle ml-2'><FiShoppingCart /></Button>
+                                            <span className='count d-flex align-items-center justify-content-center'>9</span>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
