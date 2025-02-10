@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/logo.webp';
 import CountryDropdown from '../CountryDropdown';
-import { IoSearch } from 'react-icons/io5';
 import Button from '@mui/material/Button';
 import { LuUserRound } from "react-icons/lu";
 import { FiShoppingCart } from "react-icons/fi";
+import SearchBox from './SearchBox';
+import Navigation from './Navigation';
 
 
 
@@ -28,13 +29,7 @@ const Header = ()=>{
 
                             <div className='col-sm-10 d-flex align-items-center part2'>
                                 <CountryDropdown/>
-                        
-                                {/* Header search starts here */}
-                                <div className='headerSearch ml-3 mr-3'>
-                                    <input type='text' placeholder='Search for products...'/>
-                                    <Button><IoSearch/></Button>
-                                </div>
-                                {/* Header search ends here */}
+                                <SearchBox/>
 
                                 <div className='part3 d-flex align-items-center ml-auto'>
                                     <Button className='circle mr-3'><LuUserRound /></Button>
@@ -51,6 +46,9 @@ const Header = ()=>{
                         </div>
                     </div>
                 </header>
+
+                <Navigation/>
+                 
             </div>
         </>
     )
